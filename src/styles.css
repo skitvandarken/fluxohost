@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+body, a, p, li, nav,  h1, h2, h3, span, ul, footer {
+  font-family: 'Ubuntu', sans-serif;
+   
+    font-style: normal;
+    
+}
+html, body { height: 100%; }
+body { margin: 0; 
+  font-family: 'Ubuntu', sans-serif;
+}

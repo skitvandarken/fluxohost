@@ -1,0 +1,28 @@
+.border{
+
+    border-radius: 20px;
+
+}
+
+.fundo-domain {
+    background-image: url('/img/domain-registration-services.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+  }
+
+
+  .fundo-aspectos{
+    background: linear-gradient(to top, #234d77, #1e87f0);
+
+  }
+
+
+  .fundo-aspectos-servicos{
+    background-image: url('/img/fundo-servicos.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  }
+
+

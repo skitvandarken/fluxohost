@@ -1,0 +1,34 @@
+.fundo-luanda {
+    background-image: url('/img/luanda-fluxohost.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.fundo-madeira {
+    background-image: url('/img/madeira_fluxohost.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fundo-kinshasa {
+    background-image: url('/img/kinshasa_fluxohost.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fundo-parceiros{
+    background: linear-gradient(to top, #234d77, #1e87f0);
+
+}
+
+
+.fundo-contacto {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/img/fundo-contacto.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
