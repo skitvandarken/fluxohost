@@ -15,8 +15,18 @@
 
   .fundo-aspectos{
     background: linear-gradient(to top, #234d77, #1e87f0);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 
   }
+
+  .fundo-aspectos:hover{
+    background: linear-gradient(to top, #234d77, #1e87f0);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  }
+
 
 
   .fundo-aspectos-servicos{

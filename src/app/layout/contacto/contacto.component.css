@@ -3,6 +3,18 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+
+}
+
+
+.fundo-luanda:hover{
+  
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
 }
 
 
@@ -11,6 +23,17 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+
+}
+
+.fundo-madeira:hover{
+  
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
 }
 
 .fundo-kinshasa {
@@ -18,10 +41,35 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 40px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+
 }
+
+
+.fundo-kinshasa:hover{
+  
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
 
 .fundo-parceiros{
     background: linear-gradient(to top, #234d77, #1e87f0);
+    border-radius: 40px;
+
+
+
+}
+
+
+
+.fundo-parceiros:hover{
+  
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
 }
 
