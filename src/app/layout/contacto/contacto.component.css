@@ -59,6 +59,7 @@
 .fundo-parceiros{
     background: linear-gradient(to top, #234d77, #1e87f0);
     border-radius: 40px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 
 
 
@@ -79,4 +80,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
   }

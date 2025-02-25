@@ -16,7 +16,9 @@
   .fundo-aspectos{
     background: linear-gradient(to top, #234d77, #1e87f0);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-
+    border-color: rgb(126, 195, 255);
+    border-width: 1px;
+    border-style: solid;
   }
 
   .fundo-aspectos:hover{

@@ -16,7 +16,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
+
+
+    border-color: rgb(126, 195, 255);
+    border-width: 1px;
+    border-style: solid;}
 
 
 
@@ -29,20 +33,29 @@
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
-
+    border-color: rgb(126, 195, 255);
+    border-width: 1px;
+    border-style: solid;
 }
 
 .border {
     border-radius: 20px;
+
 }
 
 .uk-card-primary {
     background: linear-gradient(to top, #234d77, #1e87f0);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-color: rgb(126, 195, 255);
+    border-width: 1px;
+    border-style: solid;
 }
 
 
 .uk-card-primary:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-color: rgb(126, 195, 255);
+    border-width: 1px;
+    border-style: solid;
 }
