@@ -77,9 +77,6 @@
     color: white;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     transform: scale(1.05);
-
-
-
 }
 
 
@@ -91,10 +88,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-
-
-
 
 }
 

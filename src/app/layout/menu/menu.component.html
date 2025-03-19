@@ -3,39 +3,36 @@
         <div uk-navbar>
 
             <div class="uk-navbar-left">
+                <!-- Logo à esquerda -->
+                <a href="#" class="uk-navbar-item uk-logo">
+                    <img src="img/logo.png" alt="Logo" style="max-width: 120px; max-height: auto;">
+                </a>
+            </div>
 
+            <div class="uk-navbar-center">
+                <!-- Links de navegação centralizados -->
                 <ul class="uk-navbar-nav">
-                    <li>                        <a routerLink="/">Início</a>
-                    </li>
+                    <li><a routerLink="/">Início</a></li>
                     <li class="uk-active">
-                        <a  routerLink="/hosting"><span class="uk-margin-xsmall-right" uk-icon="icon: server; ratio: 1"></span> Hospedagem Web
-                          </a>
-                        
+                        <a routerLink="/hosting"><span class="uk-margin-xsmall-right" uk-icon="icon: server; ratio: 1"></span> Hospedagem Web</a>
                     </li>
                     <li>
                         <a routerLink="/cloud"><span class="uk-margin-xsmall-right" uk-icon="icon: cloud-upload; ratio: 1"></span> Cloud</a>
-                        
                     </li>
                     <li>
-                        <a href="#"> <span class="uk-margin-xsmall-right" uk-icon="icon:world; ratio: 1"></span>VPN</a>
-                      
+                        <a href="#"> <span class="uk-margin-xsmall-right" uk-icon="icon: world; ratio: 1"></span> VPN</a>
                     </li>
-
                     <li>
-                        <a href="#"> <span class="uk-margin-xsmall-right" uk-icon="icon:world; ratio: 1"></span> Domínios</a>
-                      
+                        <a routerLink="/domain"> <span class="uk-margin-xsmall-right" uk-icon="icon: world; ratio: 1"></span> Domínios</a>
                     </li>
                 </ul>
-
             </div>
 
             <div class="uk-navbar-right">
-
+                <!-- Botão "Área de Cliente" à direita -->
                 <ul class="uk-navbar-nav">
                     <li><a href="#"> <button class="uk-button uk-button-secondary uk-border-pill">Área de Cliente</button></a></li>
-                    
                 </ul>
-
             </div>
 
         </div>
