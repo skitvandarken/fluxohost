@@ -64,7 +64,7 @@
 
 .uk-card-default {
 
-    background: linear-gradient(to top, #234d77, #1e87f0);
+    background: linear-gradient(to top, #092745, #1e87f0);
     color: white;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 
@@ -73,10 +73,11 @@
 
 .uk-card-default:hover {
 
-    background: linear-gradient(to top, #234d77, #1e87f0);
+    background: linear-gradient(to top, #10467b, #1768b8);
     color: white;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 
@@ -106,51 +107,7 @@
     z-index: -1; /* Puts the background image behind the content */
 }
 
-.imagem {
-    width: 64px;
-    height: 64px;
-    margin-right: 20px;
-}
 
-.image img{
-    width: 100%;
-    height: auto;
-}
-
-.title{
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: left;
-}
-
-.card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        border: solid black 1px;
-    }
-.card:hover {
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.card-fc {
-    padding: 50px 30px 50px 20px;
-}
-
-.div {
-    margin: 0;
-    padding: 50px 30px 50px 20px;
-}
-
-.el {
-    margin: 0 0 15px;
-    text-align: justify;
-    font-size: 12px;
-}
-h4 {
-    font-size: 20px;
-    margin:0 0 10px;
-
-}
-
-.back{
-    background-color: blue;
+.bg {
+    background: linear-gradient(to top, #234d77, #1e87f0);
 }

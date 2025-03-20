@@ -161,3 +161,14 @@ h4 {
 .back{
     background-color: blue;
 }
+
+.bg {
+
+    background: linear-gradient(to top, #234d77, #1e87f0);
+    
+    }
+
+
+.uk-border-rounded {
+    border-radius: 20px;
+}

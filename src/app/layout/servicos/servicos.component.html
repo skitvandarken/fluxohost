@@ -1,32 +1,50 @@
 <div class="uk-background-muted">
 
-<div class="uk-container ">
-
-    <div class="uk-container uk-margin-large-top uk-margin-large-bottom">
-        <div class="uk-child-width-1-2@l uk-child-width-1-1@s uk-grid-match uk-grid uk-text-left">
-            <div>
-                <div  class=" uk-border-rounded card  uk-card-body uk-width-1-1@m">
-                    <img src="img/domain-registration-services.webp">
-
-    
+    <div class="uk-container">
+        <div >
+            <div class="uk-child-width-1-2@l uk-child-width-1-1@s uk-grid-match uk-grid uk-text-left">
+                <div>
+                    <div class="uk-border-rounded card uk-card-body uk-width-1-1@m">
+                        <img src="img/domain-registration-services.webp">
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class=" uk-border-rounded card uk-card-body uk-width-1-1@m">
-                    <b>Registo de Domínios</b>
-                    <h1 style="color:#234d77"><b>Comece registando um domínio Web</b></h1>
-    
-                    <input style="border-color: rgb(52, 52, 52);" class="uk-input uk-form-width-large uk-border-pill" type="text"
-                        placeholder=" Exemplo: suaempresa.com" aria-label="Large">
-                    <button class="uk-margin-medium-top uk-border-pill uk-button uk-button-primary">Verificar
-                        Disponibilidade</button>      </div>
-            </div>
-
+                <div>
+                    <div class="uk-border-rounded card uk-card-body uk-width-1-1@m">
+                      <b>Registo de Domínios</b>
+                      <h1 style="color:#234d77"><b>Comece registando um domínio Web</b></h1>
+                  
+                      <!-- Input para o domínio -->
+                      <input id="dominioInput" style="border-color: rgb(52, 52, 52);"
+                        class="uk-input uk-form-width-large uk-border-pill" type="text"
+                        placeholder="Exemplo: suaempresa.com" aria-label="Large" [(ngModel)]="dominio">
+                  
+                      <!-- Animação de carregamento -->
+                      <div *ngIf="isLoading" class="uk-margin-small-top">
+                        <div class="uk-text-center">
+                          <div class="uk-spinner" uk-spinner="ratio: 2"></div>
+                          <p>Verificando disponibilidade...</p>
+                        </div>
+                      </div>
+                  
+                      <!-- Resposta da API -->
+                      <div *ngIf="resposta && !isLoading" class="uk-margin-small-top">
+                        <div class="uk-card uk-card-body uk-border-rounded uk-box-shadow-medium">
+                          <div [ngClass]="alertClass">
+                            <p class="uk-text-left uk-text-lead">{{ resposta }}</p>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <!-- Botão de verificação -->
+                      <button id="verificarBtn"
+                        class="uk-margin-medium-top uk-border-pill uk-button uk-button-primary"
+                        (click)="verificarDominio()" [disabled]="isLoading">
+                        Verificar Disponibilidade
+                      </button>
+                    </div>
+                  </div>
         </div>
     </div>
-    
-
-</div>
 
     
 </div>
