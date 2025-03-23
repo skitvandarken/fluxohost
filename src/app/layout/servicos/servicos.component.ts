@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common'; // Importe o CommonModule
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-servicos',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './servicos.component.html',
   styleUrl: './servicos.component.css'
 })

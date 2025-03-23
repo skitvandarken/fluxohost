@@ -1,17 +1,24 @@
 .uk-navbar-dropdown{
     border-radius: 20px;
-    color: white;
+    
 }
 
 nav, .uk-navbar-container{
     
   
-    color: white;
+    color: white !important;
     background: linear-gradient(to top, #234d77, #1e87f0);
 }
 
 .uk-navbar-nav>li>a{
-    color: #ffffff;
+    color: #ffffff !important;
+    font-weight: bold;
+    font-family: inherit
+    
+}
+
+.uk-navbar-nav>li>a:hover{
+    color: #000000 !important;
     font-weight: bold;
     font-family: inherit
     
