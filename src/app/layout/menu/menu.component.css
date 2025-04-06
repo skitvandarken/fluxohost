@@ -3,6 +3,16 @@
     
 }
 
+.uk-offcanvas-bar{
+    background: linear-gradient(to top, #234d77, #1e87f0);
+    color:white !important;
+
+}
+
+.uk-navbar-toggle {
+    color: #ffffff ;
+}
+
 nav, .uk-navbar-container{
     
   

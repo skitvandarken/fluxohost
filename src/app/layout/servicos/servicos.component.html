@@ -1,7 +1,7 @@
 <div class="uk-background-muted">
 
     <div class="uk-container">
-        <div class="uk-container" >
+        <div class="uk-container">
             <div class="uk-child-width-1-2@l uk-child-width-1-1@s uk-grid-match uk-grid uk-text-left">
                 <div>
                     <div class="uk-border-rounded card uk-card-body uk-width-1-1@m uk-visible@m">
@@ -10,85 +10,93 @@
                 </div>
                 <div>
                     <div class="uk-border-rounded card uk-card-body uk-width-1-1@m">
-                      <b>Registo de Domínios</b>
-                      <h1 style="color:#234d77" class="titile"><b>Comece registando um domínio Web</b></h1>
+                        <b>Registo de Domínios</b>
+                        <h1 style="color:#234d77" class="titile"><b>Comece registando um domínio Web</b></h1>
 
-                      <!-- Input para o domínio -->
-                      <input id="dominioInput" style="border-color: rgb(52, 52, 52);"
-                        class="uk-input uk-form-width-large uk-border-pill" type="text"
-                        placeholder="Exemplo: suaempresa.com" aria-label="Large" [(ngModel)]="dominio">
-                  
-                      <!-- Animação de carregamento -->
-                      <div *ngIf="isLoading" class="uk-margin-small-top">
-                        <div class="uk-text-center">
-                          <div class="uk-spinner" uk-spinner="ratio: 2"></div>
-                          <p>Verificando disponibilidade...</p>
+                        <!-- Input para o domínio -->
+                        <input id="dominioInput" style="border-color: rgb(52, 52, 52);"
+                            class="uk-input uk-form-width-large uk-border-pill" type="text"
+                            placeholder="Exemplo: suaempresa.com" aria-label="Large" [(ngModel)]="dominio">
+
+                        <!-- Animação de carregamento -->
+                        <div *ngIf="isLoading" class="uk-margin-small-top">
+                            <div class="uk-text-center">
+                                <div class="uk-spinner" uk-spinner="ratio: 2"></div>
+                                <p>Verificando disponibilidade...</p>
+                            </div>
                         </div>
-                      </div>
-                  
-                      <!-- Resposta da API -->
-                      <div *ngIf="resposta && !isLoading" class="uk-margin-medium-top">
-                        <div class="uk-card uk-card-body borda uk-border-rounded uk-box-shadow-medium">
-                          <div [ngClass]="alertClass">
-                            <p class="uk-text-left uk-text-lead"> <b>{{ resposta }} </b></p>
-                          </div>
+
+                        <!-- Resposta da API -->
+                        <div *ngIf="resposta && !isLoading" class="uk-margin-medium-top">
+                            <div class="uk-card uk-card-body borda uk-border-rounded uk-box-shadow-medium">
+                                <div [ngClass]="alertClass">
+                                    <p class="uk-text-left uk-text-lead"> <b>{{ resposta }} </b></p>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                  
-                      <!-- Botão de verificação -->
-                      <button id="verificarBtn"
-                        class="uk-margin-medium-top uk-border-pill uk-button uk-button-primary"
-                        (click)="verificarDominio()" [disabled]="isLoading">
-                        Verificar Disponibilidade
-                      </button>
+
+                        <!-- Botão de verificação -->
+                        <button id="verificarBtn"
+                            class="uk-margin-medium-top uk-border-pill uk-button uk-button-primary"
+                            (click)="verificarDominio()" [disabled]="isLoading">
+                            Verificar Disponibilidade
+                        </button>
                     </div>
-                  </div>
-        </div>
-    </div>    
-</div>
-
-<div class="fundo-aspectos-servicos ">
-    <div class="uk-container uk-text-center">
-        <h1 class=" uk-margin-medium-top titile" style="color: white"><b>Uma infraestrutura distribuída e resiliente</b></h1>
-    </div>
-    
-    <div class=" uk-margin-large-top uk-margin-large-bottom uk-margin-medium-right uk-margin-medium-left">
-        <div class="uk-child-width-1-4@l uk-child-width-1-1@s espaco uk-grid-match uk-grid uk-text-left">
-            <div>
-                <div class="uk-card fundo-aspectos uk-border-rounded  uk-card-body">
-                    <h3 style="color: white;" class="uk-card-title"> <b> Interface <br> Amigável</b></h3>
-                    <p style="color: white;">Gerencie seus recursos com facilidade utilizando o cPanel. Envie e receba
-                        E-mails com facilidade usando o Webmail</p>
                 </div>
             </div>
-            <div>
-                <div class="uk-card fundo-aspectos uk-border-rounded uk-card-body">
-                    <h3 style="color: white;" class="uk-card-title"><b> Seguro <br> e Estável</b></h3>
-                    <p style="color: white;">Nossa infraestrutura é baseada em Linux, garantindo segurança e estabilidade.
-                    </p>
-                </div>
-            </div>
-        
-
-            <div>
-                <div class="uk-card fundo-aspectos uk-border-rounded  uk-card-body">
-                    <h3 style="color: white;" class="uk-card-title"><b>Baixo <br>Custo</b></h3>
-                    <p style="color:white">Só cobramos o que você usa e temos planos para todas as demandas. Creça de acordo
-                        com suas necessidades apenas</p>
-                </div>
-            </div>
-
-            <div class="">
-                <div class="uk-card fundo-aspectos uk-border-rounded  uk-card-body">
-                    <h3 style="color: white;" class="uk-card-title"><b>Baixa <br> Latência</b></h3>
-                    <p style="color: white">Estamos conectados à infraestrutura local e interconectados com principais redes
-                        de conteúdo e trânsito.</p>
-                </div>
-            </div>
-      
         </div>
     </div>
 
+    <div class="fundo-aspectos-servicos  ">
+
+        <div class="uk-container">
+            <div class="uk-container uk-text-center ">
+                <h1 class=" uk-margin-medium-top titile" style="color: white"><b>Uma infraestrutura distribuída e
+                        resiliente</b></h1>
+            </div>
+
+            <div class=" uk-margin-large-top uk-margin-large-bottom uk-margin-medium-right uk-margin-medium-left">
+                <div class="uk-child-width-1-4@l uk-child-width-1-1@s espaco uk-grid-match uk-grid uk-text-left">
+                    <div>
+                        <div class="uk-card fundo-aspectos uk-border-rounded  uk-card-body">
+                            <h3 style="color: white;" class="uk-card-title"> <b> Interface <br> Amigável</b></h3>
+                            <p style="color: white;">Gerencie seus recursos com facilidade utilizando o cPanel. Envie e
+                                receba
+                                E-mails com facilidade usando o Webmail</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card fundo-aspectos uk-border-rounded uk-card-body">
+                            <h3 style="color: white;" class="uk-card-title"><b> Seguro <br> e Estável</b></h3>
+                            <p style="color: white;">Nossa infraestrutura é baseada em Linux, garantindo segurança e
+                                estabilidade.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div class="uk-card fundo-aspectos uk-border-rounded  uk-card-body">
+                            <h3 style="color: white;" class="uk-card-title"><b>Baixo <br>Custo</b></h3>
+                            <p style="color:white">Só cobramos o que você usa e temos planos para todas as demandas.
+                                Creça de acordo
+                                com suas necessidades apenas</p>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div class="uk-card fundo-aspectos uk-border-rounded  uk-card-body">
+                            <h3 style="color: white;" class="uk-card-title"><b>Baixa <br> Latência</b></h3>
+                            <p style="color: white">Estamos conectados à infraestrutura local e interconectados com
+                                principais redes
+                                de conteúdo e trânsito.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 
     <div class="uk-text-center ">
         <a href="https://t.me/+244937754502" target="_blank">
             <button class="uk-button uk-button-primary uk-border-pill uk-button-large uk-margin-large-bottom">
@@ -96,4 +104,5 @@
             </button>
         </a>
     </div>
-</div>
+    -->
+    </div>

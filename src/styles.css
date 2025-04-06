@@ -9,3 +9,10 @@ html, body { height: 100%; }
 body { margin: 0; 
   font-family: 'Ubuntu', sans-serif;
 }
+
+
+.fundo-default{
+  background-image: url('/img/fundo-servicos.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  }
