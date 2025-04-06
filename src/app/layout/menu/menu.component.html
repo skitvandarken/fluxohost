@@ -2,26 +2,29 @@
     <div class="uk-container">
         <div uk-navbar>
 
-            <div class="uk-navbar-left">
+            <div class="uk-navbar-left lo">
                 <!-- Logo à esquerda -->
-                <a href="#" class="uk-navbar-item uk-logo">
+                <a href="#" class="uk-navbar-item uk-logo logo">
                     <img src="img/logo.png" alt="Logo" style="max-width: 120px; max-height: auto;">
                 </a>
             </div>
 
             <div class="uk-navbar-center">
                 <!-- Links de navegação centralizados -->
-                <ul class="uk-navbar-nav">
+                <ul class="uk-navbar-nav uk-visible@l">
                     <li><a  routerLink="/">Início</a></li>
                     <li class="uk-active">
                         <a routerLink="/hosting"><span class="uk-margin-xsmall-right" uk-icon="icon: server; ratio: 1"></span> Hospedagem Web</a>
                     </li>
-                    <li>
+                    <!--
+                        <li>
                         <a routerLink="/cloud"><span class="uk-margin-xsmall-right" uk-icon="icon: cloud-upload; ratio: 1"></span> Cloud</a>
-                    </li>
+                        </li>
+                    -->
                     <li>
                         <a target="_blank" href="https://noadsvpn.online/"> <span class="uk-margin-xsmall-right" uk-icon="icon: world; ratio: 1"></span> VPN</a>
                     </li>
+                    
                     <li>
                         <a routerLink="/domain"> <span class="uk-margin-xsmall-right" uk-icon="icon: world; ratio: 1"></span> Domínios</a>
                     </li>
@@ -30,11 +33,25 @@
 
             <div class="uk-navbar-right">
                 <!-- Botão "Área de Cliente" à direita -->
-                <ul class="uk-navbar-nav">
-                    <li><a href="#"> <button class="uk-button uk-button-secondary uk-border-pill">Área de Cliente</button></a></li>
+                <ul class="uk-navbar-nav uk-visible@l">
+                    <li><a href="https://q28hpkmheelk.upmind.app/login" target="_blank"> <button class="uk-button uk-button-secondary uk-border-pill">Área de Cliente</button></a></li>
                 </ul>
             </div>
-
+            <a href="#" class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></a>
         </div>
     </div>
 </nav>
+
+
+<div id="offcanvas-nav" uk-offcanvas="mode: push; overlay: true">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul class="uk-nav uk-nav-default">
+            <li><a href="/">Início</a></li>
+            <li><a href="/hosting">Hospedagem Web</a></li>
+            <li><a href="/domain">Domínios</a></li>
+            <li><a href="https://noadsvpn.online/" target="_blank">VPN</a></li>
+            <li><a href="https://q28hpkmheelk.upmind.app/login" target="_blank"> <button class="uk-button uk-button-secondary uk-border-pill">Área de Cliente</button></a></li>
+        </ul>
+    </div>
+</div>

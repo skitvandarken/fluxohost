@@ -62,3 +62,28 @@
     border-width: 1px;
     border-style: solid;
 }
+
+@media (max-width: 960px) {
+    .uk-child-width-1-3 {
+        width: 100% !important;
+    }
+
+    .titile{
+        font-size: 30px;
+    }
+
+    .espaco div{
+        margin-top: 10px;
+    }
+    
+}
+
+/* Adicionando um pouco de espaço para o título */
+.uk-container h1 {
+    margin-bottom: 20px;
+}
+
+/* Ajuste no botão */
+.uk-button {
+    margin-top: 10px;
+}

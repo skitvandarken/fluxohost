@@ -23,7 +23,7 @@ export class ServicosComponent {
           this.isLoading = true; // Ativa o estado de carregamento
           this.verificarDisponibilidadeNameSilo(this.dominio);
         } else {
-          this.resposta = 'Domínio não suportado. Use .com, .net, .org ou .online.';
+          this.resposta = 'Domínio não suportado. Use: exemplo.com, exemplo.net ...';
           this.alertClass = 'uk-alert-danger';
         }
       } else {
@@ -33,7 +33,7 @@ export class ServicosComponent {
     }
   
     verificarDisponibilidadeNameSilo(dominio: string) {
-      const backendUrl = 'http://localhost:3000/verificar-dominio';
+      const backendUrl = 'https://nodejs.fluxo-host.com/verificar-dominio';
   
       fetch(backendUrl, {
         method: 'POST',
@@ -48,9 +48,9 @@ export class ServicosComponent {
         if (data.reply.code === 300) {
           if (data.reply.available) {
             const dominioInfo = data.reply.available.domain;
-            this.resposta = `O domínio ${dominioInfo.domain} está disponível!`;
+            this.resposta = `O domínio ${dominioInfo.domain} está DISPONÍVEL!`;
           } else if (data.reply.unavailable) {
-            this.resposta = `O domínio ${data.reply.unavailable.domain} não está disponível.`;
+            this.resposta = `O domínio ${data.reply.unavailable.domain} está INDISPONÍVEL.`;
           }
         } else {
           this.resposta = `Erro na API: ${data.reply.detail}`;

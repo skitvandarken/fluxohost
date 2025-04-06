@@ -1,0 +1,83 @@
+Documentação sobre Chatbase
+
+Introdução
+
+O Chatbase é uma plataforma que permite criar chatbots baseados em inteligência artificial. Ele suporta integrações com diversas ferramentas, incluindo sites, WhatsApp e Telegram. Com o Chatbase, é possível treinar um chatbot alimentando-o com arquivos, textos ou URLs para que ele responda de maneira personalizada.
+
+Criando um Chatbot no Chatbase
+
+Passo 1: Criar uma Conta
+
+Acesse Chatbase.
+
+Clique em "Sign Up" e registre-se com seu e-mail ou conta Google.
+
+Confirme seu e-mail (se necessário).
+
+Passo 2: Criar um Novo Chatbot
+
+No painel de controle, clique em "Create a chatbot".
+
+Dê um nome ao seu chatbot.
+
+Escolha como deseja alimentar o chatbot (upload de documentos, links, texto manual, etc.).
+
+Configure o idioma e outras opções específicas.
+
+Clique em "Create".
+
+Passo 3: Treinar o Chatbot
+
+Envie arquivos (PDFs, textos, etc.) para treinar o bot.
+
+Insira URLs para que ele extraia conteúdo relevante.
+
+Edite respostas padrões, se necessário.
+
+Clique em "Train" para iniciar o treinamento.
+
+Implementação do Chatbase
+
+1. Integração via Widget para Sites
+
+No painel do chatbot, clique em "Embed".
+
+Copie o código JavaScript fornecido.
+
+Cole o código no HTML do seu site antes da tag </body>.
+
+Exemplo de implementação:
+
+<script>
+  window.chatbaseConfig = {
+    chatbotId: "SEU_CHATBOT_ID",
+  };
+</script>
+<script src="https://www.chatbase.co/embed.min.js" defer></script>
+
+2. Integração via API
+
+No painel, acesse a seção "API" e copie sua chave de API.
+
+Utilize a API para enviar e receber mensagens.
+
+Exemplo de requisição com cURL:
+
+curl -X POST "https://www.chatbase.co/api/v1/query" \
+-H "Authorization: Bearer SUA_API_KEY" \
+-H "Content-Type: application/json" \
+-d '{"message": "Olá, como posso ajudar?", "sessionId": "12345"}'
+
+3. Integração com WhatsApp e Telegram
+
+Acesse a seção de integração no painel do chatbot.
+
+Escolha WhatsApp ou Telegram.
+
+Siga as instruções para conectar ao serviço desejado (Webhook ou API de terceiros como Twilio).
+
+Considerações Finais
+
+O Chatbase é uma ferramenta poderosa para criar chatbots personalizados. Ele permite uma implementação fácil tanto em sites quanto em aplicativos de mensagens. Para melhores resultados, mantenha a base de conhecimento do chatbot sempre atualizada.
+
+Caso precise de suporte, acesse a documentação oficial do Chatbase ou entre em contato com o suporte da plataforma.

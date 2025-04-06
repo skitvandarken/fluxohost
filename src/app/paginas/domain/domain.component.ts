@@ -36,7 +36,7 @@ export class DomainComponent {
     }
   
     verificarDisponibilidadeNameSilo(dominio: string) {
-      const backendUrl = 'http://localhost:3000/verificar-dominio';
+      const backendUrl = 'https://nodejs.fluxo-host.com/verificar-dominio';
   
       fetch(backendUrl, {
         method: 'POST',

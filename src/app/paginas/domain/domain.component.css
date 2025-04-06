@@ -111,3 +111,23 @@
 .bg {
     background: linear-gradient(to top, #234d77, #1e87f0);
 }
+
+
+@media (max-width: 960px) {
+    .uk-child-width-1-3 {
+        width: 100% !important;
+    }
+
+    .titile{
+        font-size: 25px;
+    }
+
+    .espaco h2{
+        font-size: 25px !important;
+    }
+
+    .espaco div{
+        margin-top: 10px;
+    }
+    
+}

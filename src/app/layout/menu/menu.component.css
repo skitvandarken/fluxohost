@@ -18,8 +18,15 @@ nav, .uk-navbar-container{
 }
 
 .uk-navbar-nav>li>a:hover{
-    color: #000000 !important;
+    color: #e2e2e2 !important;
     font-weight: bold;
     font-family: inherit
     
+}
+
+@media (max-width: 960px) {
+    .logo{
+        height: 20px;
+        width: 100px;
+    }
 }
